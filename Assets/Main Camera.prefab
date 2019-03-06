@@ -55,9 +55,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -92,10 +92,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1593758531147960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17675ef73bd23a84d8d45f7f2283b1f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 5143ef8a89ac82c44a09814e7d985c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raptor: {fileID: 0}
   mouseSensitivity: 3
   speed: 100
   minimumX: -360

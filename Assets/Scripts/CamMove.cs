@@ -14,8 +14,10 @@ public class CamMove : MonoBehaviour {
     Vector3 nextPosition;
 
 
+
+
     public float mouseSensitivity = 3.0f;
-    public float speed = 5.0f;
+    public float speed = 100.0f;
     private Vector3 transfer;
 
     public float minimumX = -360F;
@@ -44,7 +46,7 @@ public class CamMove : MonoBehaviour {
         if (Physics.Linecast(curPosition, nextPosition, out hit))
         {
             Debug.DrawLine(curPosition, nextPosition, Color.red, 10);
-            Debug.Log("hit" + hit);
+
 
             reflection = Vector3.ProjectOnPlane(nextPosition - hit.point, hit.normal.normalized);
 
@@ -76,6 +78,9 @@ public class CamMove : MonoBehaviour {
 
 
         prevPosition = curPosition;
+
+        //raptor.GetComponent<MeshCollider>().sharedMesh = null;
+        //raptor.GetComponent<MeshCollider>().sharedMesh = raptor.GetComponent<MeshFilter>().mesh;
 
     }
     void OnDrawGizmos()
